@@ -1,0 +1,367 @@
+<html xmlns="">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Vehicle Damage Assessment & Cost Estimator</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" />
+<style>
+
+/*
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	background: #FFFFFF url(static/images/img01.gif) repeat-x;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 13px;
+	color: #666666;
+}
+
+h1, h2, h3 {
+	margin: 0;
+	font-weight: normal;
+	color: #3F586B;
+}
+
+h1 {
+	font-size: 197%;
+}
+
+h2 {
+	font-size: 167%;
+}
+
+h3 {
+	font-size: 100%;
+	font-weight: bold;
+}
+
+p, ol, ul {
+	line-height: 170%;
+}
+
+p {
+}
+
+ol {
+	margin-left: 0;
+	padding-left: 0;
+	list-style-position: inside;
+}
+
+ul {
+	margin-left: 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul li {
+	padding-left: 15px;
+	background: url(static/images/img07.gif) no-repeat 0px 7px;
+}
+
+blockquote {
+	margin: 0;
+	padding-left: 20px;
+	font-style: italic;
+}
+
+blockquote * {
+}
+
+a {
+	color: #FF5723;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #1777B1;
+}
+
+img {
+	border: none;
+}
+
+img.left {
+	float: left;
+	margin: 3px 15px 0 0;
+}
+
+img.right {
+	float: right;
+	margin: 3px 0 0 15px;
+}
+
+hr {
+	display: none;
+}
+
+/* Header */
+
+#header {
+	width: 700px;
+	height: 235px;
+	margin: 0 auto;
+	background: #A4C0C8 url(static/images/img02.jpg) no-repeat;
+}
+
+/* Logo */
+
+#logo {
+	height: 190px;
+}
+
+#logo h1, #logo h2 {
+	text-align: center;
+}
+
+#logo h1 {
+	padding-top: 40px;
+	font-size: 350%;
+}
+
+#logo h2 {
+	font-size: 150%;
+}
+
+#logo a {
+	text-decoration: none;
+	color: #3F586B;
+}
+
+/* Menu */
+
+#menu {
+	padding-top: 0;
+	width: 798px;
+}
+
+#menu ul {
+	margin: 0;
+	padding: 10px 0 0 0;
+	list-style: none;
+	line-height: normal;
+	text-align: center;
+}
+
+#menu li {
+	display: inline;
+	margin: 0;
+	padding: 0;
+}
+
+#menu a {
+	padding: 0 20px;
+	text-decoration: none;
+	font-size: 136%;
+	font-weight: bold;
+	color: #610720;
+}
+
+#menu a:hover {
+	text-decoration: underline;
+}
+
+#menu .active a {
+	color: #FFFFFF;
+}
+
+/* Page */
+
+#page {
+	width: 730px;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+/* Content */
+
+#content {
+	float: left;
+	width: 800px;
+	padding-top: 8px;
+}
+
+.twocols {
+}
+
+.twocols .title {
+	padding-bottom: 10px;
+	border-bottom: 1px solid #97C984;
+}
+
+.twocols .col1, .twocols .col2 {
+	width: 190px;
+}
+
+.twocols .col1 {
+	float: left;
+}
+
+.twocols .col2 {
+	float: right;
+}
+
+.twocols ul {
+}
+
+.twocols ul li {
+	padding-left: 0;
+}
+
+/* Sidebar */
+
+#sidebar {
+	float: right;
+	width: 260px;
+}
+
+.boxed {
+	margin: 0 0 20px 0;
+}
+
+.boxed .title {
+	width: 250px;
+	height: 35px;
+	margin: 0;
+	padding: 10px 0 0 10px;
+	background: #A8C3CB url(static/images/img03.jpg) no-repeat;
+	font-size: 136%;
+	color: #144B6B;
+}
+
+.boxed .content {
+	padding: 20px;
+	border: 1px solid #97C984;
+	border-top: none;
+}
+
+.boxed h3 {
+	margin: 0;
+}
+
+.boxed p, .boxed ul, .boxed ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	line-height: normal;
+}
+
+.boxed ul {
+}
+
+.boxed ul li {
+	padding: 8px 0 8px 10px;
+	background: url(static/images/img04.gif) no-repeat 0px 13px;
+}
+
+.boxed ul li.first {
+	border: none;
+}
+
+/* Search */
+
+#search {
+}
+
+#search form {
+	margin: 0;
+	padding: 0;
+}
+
+#search fieldset {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+#search p {
+	float: left;
+	padding-top: 5px;
+	font-size: 85%;
+}
+
+#searchinput {
+	width: 210px;
+	margin-bottom: 5px;
+}
+
+#searchsubmit {
+	float: right;
+}
+
+/* Footer */
+
+#footer {
+	height: 100px;
+	padding: 20px;
+	background: #5F919E;
+	border-top: 5px solid #4C747E;
+}
+
+#footer p {
+	margin: 0;
+	text-align: center;
+	line-height: normal;
+	font-size: 85%;
+	color: #FFFFFF;
+}
+
+#footer a {
+	color: #FFFFFF;
+}
+</style>
+</head>
+<body>
+<div id="header">
+	<div id="logo">
+		<h1><a href="#"> Vehicle Damage Assessment  </a></h1>
+		<h2><a href="">Cost Estimator</a></h2>
+  </div>
+	<div id="menu">
+		<ul>
+			<li class="active"><a href="/">Home</a></li>
+
+            <li><a href="/user">UserLogin</a></li>
+			<li><a href="/NewUser">NewUser</a></li>
+
+		</ul>
+	</div>
+</div>
+<div id="page">
+	<div id="content">
+		<div style="margin-bottom: 20px;">
+			<h1 class="title">Welcome Vehicle Damage Assessment </h1>
+			<p align="justify"><strong>Nowadays, a lot of money is being wasted in the car insurance business due to leakage claims.
+				Claims leakage Underwriting leakage is characterized as the discrepancy between the actual payment of claims made and the sum
+				that should have been paid if all of the industry's leading practices were applied.
+				Visual examination and testing have been used to may these results. However, they impose delays in the processing of claims.
+                The aim of this project is to build a VGG16 model that can detect the area of damage on a car.
+				The rationale for such a model is that it can be used by insurance companies for faster processing of claims if users can upload pics and
+				the model can assess damage( be it dent scratch from and estimates the cost of damage. This model can also be used by lenders if
+				they are underwriting a car loan, especially for a used car.
+
+</p>
+			<h2>&nbsp;</h2>
+		  <p>&nbsp;</p>
+			</blockquote>
+	  </div>
+		<div>&nbsp;</div>
+	  <div class="twocols"></div>
+	</div>
+	<!-- end content -->
+	<!-- end sidebar -->
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<!-- end page -->
+<div id="footer">
+	<p id="legal"> <a href="#" title="This page validates as CSS"><abbr title="Cascading Style Sheets"></abbr></a></p>
+	</div>
+<div align=center> <a href='#'></a></div>
+</body>
+</html>
